@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>新春抽紅包</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- 灑金粉 -->
+  <div class="gold-dust" aria-hidden="true"></div>
+
+  <!-- 左右新年裝飾（燈籠、春聯、爆竹等都用 CSS 畫） -->
+  <div class="side-decor" aria-hidden="true">
+    <div class="lantern lantern-left l1"></div>
+    <div class="lantern lantern-left l2"></div>
+
+    <div class="lantern lantern-right r1"></div>
+    <div class="lantern lantern-right r2"></div>
+
+    <div class="couplet couplet-left"></div>
+    <div class="couplet couplet-right"></div>
+
+    <div class="firecrackers fire-left"></div>
+    <div class="firecrackers fire-right"></div>
+
+    <div class="coin coin1"></div>
+    <div class="coin coin2"></div>
+    <div class="coin coin3"></div>
+    <div class="coin coin4"></div>
+  </div>
+
+  <main class="scene">
+    <h1 class="title">雋好室 Dreams House</h1>
+    <h2 class="title2">新春抽紅包</h2>
+    <p class="subtitle">點一下抽紅包，讓好運自己跳出來 🧧</p>
+
+    <button id="drawBtn" class="btn">抽紅包</button>
+
+    <div id="packet" class="packet hidden" aria-label="紅包動畫">
+      <div class="packet-knot"></div>
+      <div class="packet-top"></div>
+      <div class="packet-body">
+        <div class="packet-gold"></div>
+      </div>
+    </div>
+
+    <div id="result" class="result hidden"></div>
+
+    <p class="note">每人限抽一次，截圖後加入官方LINE，領取好禮</p>
+
+    <img src="01107.png" class="logo" alt="Dream house logo">
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
+
